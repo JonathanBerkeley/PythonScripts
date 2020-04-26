@@ -1,8 +1,7 @@
 from subprocess import call
 import sys
-
+"""Executes .exe, and displays any stdout information to command line."""
 if __name__ == "__main__":
-    """Executes .exe, and displays any stdout information to command line."""
     for args in enumerate(sys.argv):
         if args[0] > 0:
             try:
