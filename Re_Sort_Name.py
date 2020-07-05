@@ -1,3 +1,6 @@
+#Requires txt file name sortme.txt filled with firstname lastname formatted names. Will output to output.txt lastname firstname format
+#Names should be seperated by newlines
+
 #Setup
 import sys
 sys.stdout = open('output.txt', "w")
