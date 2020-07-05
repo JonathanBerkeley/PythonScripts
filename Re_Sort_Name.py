@@ -4,12 +4,10 @@
 #Setup
 import sys
 sys.stdout = open('output.txt', "w")
-inc = 0
 
 #Resort lines
 with open("sortme.txt", "r+") as file:
     for line in file:
-        inc += 1
         line = line.split(" ")
         line[len(line)-1] = line[len(line)-1].replace('\n', '')
         line.append(line.pop(line.index(line[0].rstrip())))
