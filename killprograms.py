@@ -23,17 +23,18 @@ def main():
     except:
         print("Missing or invalid args")
         sys.exit(2)
+    if len(sys.argv) > 1:
+        time.sleep(kill_timer)
     
     for arg in sys.argv[2:]:
         for process in psutil.process_iter():
             try:
                 if arg.lower() in process.name().lower():
-                    kill_process(kill_timer, process)
+                    kill_process(process)
             except:
                 pass
 
-def kill_process(wait, target_proc):
-    time.sleep(wait)
+def kill_process(target_proc):
     target_proc.kill()
 
 main()
