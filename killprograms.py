@@ -36,5 +36,4 @@ def kill_process(wait, target_proc):
     time.sleep(wait)
     target_proc.kill()
 
-if __name__ == "__main__":
-    main()
+main()
