@@ -8,6 +8,14 @@ killprograms.py \[Time in seconds] \[Program names seperated by space]
 #### Info:
 Kills multiple processes with timer. First arg should be 0 for instant kill. Requires psutil.
 
+# kps0.py
+#### Usage: 
+kps0.py
+
+#### Info: 
+Kills processes with no timer, takes input instead of commandline arguments. Created to be bound to a keyboard key to rapidly kill multiple programs.
+Doesn't need full process name, substrings will work though becareful not to kill important processes.
+
 # golaunch.py
 #### Usage: 
 golaunch.py \[Executables path]
