@@ -30,3 +30,7 @@ Names should be seperated by newlines.
 
 #### Info: 
 Intended for reversing name ordering.
+
+# clicker.py
+#### Info:
+Very simple timed autoclicker, set interval to desired time between clicks in seconds
