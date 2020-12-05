@@ -33,4 +33,5 @@ Intended for reversing name ordering.
 
 # clicker.py
 #### Info:
-Very simple timed autoclicker, set interval to desired time between clicks in seconds
+Very simple timed autoclicker, set interval to desired time between clicks in seconds. Requires mouse package (pip install mouse)
+https://pypi.org/project/mouse/
