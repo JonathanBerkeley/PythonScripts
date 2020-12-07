@@ -2,12 +2,19 @@ import sys
 import mouse
 import time
 
-interval = 7
 def main():
+    if len(sys.argv) > 1:
+        interval = int(sys.argv[1])
+    else:
+        interval = 7
     while True:
-        clicker_code()
+        try:
+            clicker_code(interval)
+        except KeyboardInterrupt:
+            print("-- Exitting --")
+            sys.exit(0)
 
-def clicker_code():
+def clicker_code(interval):
     mouse.click()
     time.sleep(interval)
 
