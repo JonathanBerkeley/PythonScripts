@@ -1,10 +1,6 @@
-#Developed for fun by Jonathan Berkeley - 2020
-#https://opensource.org/licenses/MIT
-#Shared under MIT license. I am not liable for any claims or damages. Read MIT license for more details.
-#Please give credit if you use/repurpose this source :)
-
 import sys
 import time
+import subprocess
 try:
     import psutil
 except ModuleNotFoundError:
