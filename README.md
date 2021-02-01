@@ -10,7 +10,7 @@ Kills multiple processes with timer. First arg should be 0 for instant kill. Req
 
 # kps0.py
 #### Usage: 
-kps0.py
+kps0.py [optional argumentsof process names seperated by space]
 
 #### Info: 
 Kills processes with no timer, takes input instead of commandline arguments. Created to be bound to a keyboard key to rapidly kill multiple programs.
