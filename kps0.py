@@ -1,9 +1,5 @@
-#Developed for fun by Jonathan Berkeley - 2020
-#https://opensource.org/licenses/MIT
-#Shared under MIT license. I am not liable for any claims or damages. Read MIT license for more details.
-#Please give credit if you use/repurpose this source :)
-
 import sys
+import subprocess
 try:
     import psutil
 except ModuleNotFoundError:
@@ -17,8 +13,13 @@ except ModuleNotFoundError:
     sys.exit(1)
 
 def main():
-    kill_these = str(input("Enter programs to kill (seperated by space):\n "))
-    kill_these = kill_these.split()
+    kill_these = None
+    if (len(sys.argv) < 2):
+        kill_these = str(input("Enter programs to kill (seperated by space):\n "))
+        kill_these = kill_these.split()
+    else:
+        kill_these = sys.argv[1:]
+
     
     for arg in kill_these:
         for process in psutil.process_iter():
